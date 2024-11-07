@@ -8,8 +8,14 @@
 $input-btn-padding-y:2.5rem;
 $input-btn-padding-x:0.75rem;
 $grid-gutter-width:0.5rem;
-$card-bg:$body-bg-dark;
-$card-color: $info-text-emphasis-dark;
+$danger:#ff0077;
+$info:#00ffea;
+$light:#f3eeff;
+
+
+
+
+
 
 
 
@@ -18,6 +24,12 @@ $card-color: $info-text-emphasis-dark;
 @import "../../bootstrap/variables-dark";
 
 
+$card-bg: $dark;
+$card-color: $info;
+$card-border-radius: 2rem;
+$badge-border-radius:50rem;
+$btn-border-radius:50rem;
+$input-border-radius:50rem;
 
 
 
@@ -28,47 +40,69 @@ $h9-font-size: $font-size-base * 0.5;
 $h10-font-size: $font-size-base * 0.25;
 
 $davide-font-sizes: (
-    7: $h7-font-size,
-    8: $h8-font-size,
-    9: $h9-font-size,
-    10: $h10-font-size,
-    );
-    $font-sizes: map-merge($font-sizes, $davide-font-sizes);
-    $davide-border: (
-        6: 6px,
-        7: 7px,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+  );
+  $font-sizes: map-merge($font-sizes, $davide-font-sizes);
+  $davide-border: (
+    6: 6px,
+    7: 7px,
     8: 8px,
     9: 9px,
     10: 10px
     );
-  $border-widths: map-merge($border-widths , $davide-border );
+    $border-widths: map-merge($border-widths , $davide-border );
+    
+    
+    
+    $epicode-1:#5726c3;
+    $epicode-2:#8625a5;
+    $epicode-3:#cb2376;
+    $epicode-color:(
+      "violetto" : $epicode-1,
+      "violaceo" : $epicode-2,
+       "rosetto" : $epicode-3,
+    ); 
+    $theme-colors: map-merge($theme-colors , $epicode-color);
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
-  
-
-
-
-
-
-
-// 5. Include remainder of required parts
-@import "../../bootstrap/maps";
-@import "../../bootstrap/mixins";
-@import "../../bootstrap/root";
-
-// 6. Optionally include any other parts as needed
-@import "../../bootstrap/utilities";
-@import "../../bootstrap/reboot";
-@import "../../bootstrap/type";
-@import "../../bootstrap/images";
-@import "../../bootstrap/containers";
-@import "../../bootstrap/grid";
-@import "../../bootstrap/tables";
-@import "../../bootstrap/forms";
-@import "../../bootstrap/buttons";
-@import "../../bootstrap/transitions";
-@import "../../bootstrap/dropdown";
-@import "../../bootstrap/button-group";
-@import "../../bootstrap/nav";
+    
+    
+    
+    
+    
+    
+    
+    
+    // 5. Include remainder of required parts
+    @import "../../bootstrap/maps";
+    @import "../../bootstrap/mixins";
+    @import "../../bootstrap/root";
+    
+    // 6. Optionally include any other parts as needed
+    @import "../../bootstrap/utilities";
+    @import "../../bootstrap/reboot";
+    @import "../../bootstrap/type";
+    @import "../../bootstrap/images";
+    @import "../../bootstrap/containers";
+    @import "../../bootstrap/grid";
+    @import "../../bootstrap/tables";
+    @import "../../bootstrap/forms";
+    @import "../../bootstrap/buttons";
+    @import "../../bootstrap/transitions";
+    @import "../../bootstrap/dropdown";
+    @import "../../bootstrap/button-group";
+    @import "../../bootstrap/nav";
 @import "../../bootstrap/navbar";
 @import "../../bootstrap/card";
 @import "../../bootstrap/accordion";
